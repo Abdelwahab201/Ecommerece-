@@ -1249,3 +1249,25 @@ footer .bottom_footer .payment_img {
 .checkout .input_info .inputs input:focus {
   border-color: var(--main_color);
 }
+
+/* Responsive Checkout page */
+@media (max-width: 1000px) {
+  .checkout .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .checkout .ordersummary,
+  .checkout .input_info {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+
+  .checkout .ordersummary,
+  .checkout .input_info {
+    width: 100%;
+  }
+  .checkout .input_info h2{
+    font-size: 20px;
+  }
+}
